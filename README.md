@@ -11,3 +11,7 @@ It is a CRUD CRM application for a contact center who manages student loans thro
 - Spring JPA: To communicate backend with Database
 - Spring Boot: To communicate backend to React
 - Spring Security: for user authentication and verification (JWL Token + BCrypt.
+
+##Contributors
+
+Not seeking any support, contribution or collaborations at this time.
