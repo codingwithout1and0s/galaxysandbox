@@ -1,22 +1,28 @@
 package org.comit.GalaxySandbox.bean;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@Entity
-@Table(name="users")
+@Entity // will create table called User (based on Class name)
+@Table(name="users") // writes to table users instead of User (as User is a keyword in MYSQL)
 public class User {
 	
-	private long userID;
+	@Id
+	@GeneratedValue
+	@Column(name = "USER_ID")
+	private Long userId;
 	private String userName;
 	private String userPassword;
 	private String userNickname;
 	
 	public long getUserID() {
-		return userID;
+		return userId;
 	}
 	public void setUserID(long userID) {
-		this.userID = userID;
+		this.userId = userID;
 	}
 	public String getUserName() {
 		return userName;
