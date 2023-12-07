@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>org.comit</groupId>
-	<artifactId>GalaxySandbox</artifactId>
+	<artifactId>galaxysandbox</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>GalaxySandbox</name>
 	<description>Galaxy Sandbox</description>

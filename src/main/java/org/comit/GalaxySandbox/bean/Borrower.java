@@ -1,19 +1,24 @@
-package org.comit.GalaxySandbox.bean;
+package org.comit.galaxysandbox.bean;
 
 import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 
-@Entity // will create table called Borrower
+@Entity // will create table in MYSQL  named borrower
+@Table(name="borrower")
 public class Borrower {
 	
 	@Id
-	@GeneratedValue
-	private Long id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "BORR_ID")
+	private Long borrId;
 	private String sinNum;
 	private String firstName;
 	private String lastName;
@@ -35,11 +40,13 @@ public class Borrower {
 	private String internationalPhoneNum;
 	private String internationalPhoneType;
 	private String email;
-	public Long getId() {
-		return id;
+	//TODO: private User assignedTo; //Assigns loan(s) to user.
+	
+	public Long getBorrId() {
+		return borrId;
 	}
-	public void setId(Long id) {
-		this.id = id;
+	public void setId(Long borrId) {
+		this.borrId = borrId;
 	}
 	public String getSinNum() {
 		return sinNum;
