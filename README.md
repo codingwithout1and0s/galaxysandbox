@@ -10,7 +10,10 @@ It is a CRUD CRM application for a contact center who manages student loans thro
 - Database: MySQL
 - Spring JPA: To communicate backend with Database
 - Spring Boot: To communicate backend to React
-- Spring Security: for user authentication and verification (JWL Token + BCrypt.
+
+## Features
+- Pagination
+- Page Title Changer (useContext API)
 
 ## Contributors
 
